@@ -262,7 +262,7 @@ const Swipeout = createReactClass({
   _autoClose: function(btn) {
     if (this.state.autoClose) this._close();
     var onPress = btn.onPress;
-    if (onPress) onPress();
+    if (onPress) onPress(btn.itemData);
   },
 
   _open: function(contentPos, direction) {

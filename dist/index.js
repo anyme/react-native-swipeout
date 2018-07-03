@@ -287,7 +287,7 @@ var Swipeout = (0, _createReactClass2.default)({
   _autoClose: function _autoClose(btn) {
     if (this.state.autoClose) this._close();
     var onPress = btn.onPress;
-    if (onPress) onPress();
+    if (onPress) onPress(btn.itemData);
   },
 
   _open: function _open(contentPos, direction) {
